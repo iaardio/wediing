@@ -1,0 +1,210 @@
+.c-singletime {
+	text-align: center;
+	cursor: pointer;
+	height: 100%;
+}
+
+.singletimeNums {
+	text-align: center;
+	bottom: 1em;
+}
+
+.c-singletime .btn-txt {
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	display: -ms-flexbox;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+}
+
+.c-singletime .btn-txt .btn-info {
+	width: 100%;
+}
+
+.c-singletime .btn-txt .btn-info {
+	width: 100%;
+}
+
+.c-singletime .date-style2  label {
+	display: inline-block;
+	width: 60px;
+	height: 45px;
+	color: #d9605b;
+	font-size: 24px;
+	
+	text-align: center;
+	line-height: 45px;
+}
+
+.c-singletime .date-style2.orange label{
+	background: url(/tpl/components/business/interactive/singletime/front/img/m1.png) no-repeat center;
+	background-size: cover;	
+	color: #d9605b;
+}
+
+.c-singletime .date-style2.grey label{
+	background: url(/tpl/components/business/interactive/singletime/front/img/m2.png) no-repeat center;
+	background-size: cover;	
+	color: #c3c3c3;
+}
+
+.c-singletime .date-style2.yellow label{
+	background: url(/tpl/components/business/interactive/singletime/front/img/m3.png) no-repeat center;
+	background-size: cover;	
+	color: #fccb95;
+}
+
+.c-singletime .date-style3 label{
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: left;
+	vertical-align: bottom;
+}
+
+.c-singletime .date-style3 label span{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	font-size: 90%;
+	vertical-align: bottom;
+}
+
+.c-customform {
+	width: 100%;
+	height: 100%;
+	font-family: 'å¾®è½¯é›…é»‘';
+	overflow: auto;
+}
+
+.c-customform-inner {
+	padding: 20% 0px 20% 0px;
+}
+
+.create-by-mobile .c-customform-inner {
+	padding: 0px !important;
+	height: 100%;
+}
+.create-by-mobile .c-customform-title {
+	padding-top:12%;
+}
+
+.c-customform-field {
+	width: 80%;
+	height: 4.3em;
+	margin: 0 auto 1.125em auto;
+	border: 1px solid #fff;
+	background: #fff;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.c-customform-field.s-border {
+	border: 1px solid #d8dde4;
+}
+
+.c-customform-field.z-error {
+	border: 2px solid red;
+}
+
+.c-customform-textbox {
+	width: 100%;
+	padding-left: 0.5rem;
+	font-size: 1.5em;
+	border: none;
+	height: 95%;
+	background: transparent;
+}
+
+.c-customform-radio {
+	-webkit-transform: scale(1.5);
+	vertical-align: middle;
+}
+
+.c-customform-field-controlls {
+	position: absolute;
+	top: 50%;
+	left: 70px;
+	right: 0px;
+	height: 40px;
+	margin-top: -20px;
+	text-align: left;
+}
+
+.c-customform-field-controlls .radio {
+	font-size: 1.875em;
+	margin-left: 1em;
+}
+
+.c-customform-field-controlls .radio.first {
+	margin-left: 3em;
+}
+
+.c-customform-field-controlls .radio span {
+	vertical-align: middle;
+}
+
+.c-customform-btns {
+	text-align: center;
+	height: 5em;
+}
+
+.c-customform-btns input {
+	color: #FFFFFF;
+	width: 80%;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	background-color: #5FB336;
+	height: 100%;
+	border: 1px solid #6FD43E;
+	font-size: 2.125em;
+}
+
+
+/*é¢„è§ˆåŒºç»„ä»¶æ ·å¼é€‚é…*/
+.m-editor .c-customform-field,
+.m-editor .c-customform-btns {
+    font-size: 7.8px;
+	height: 3.3em;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.m-editor .c-customform-field,
+	.m-editor .c-customform-btns {
+	    font-size: 7.8px;
+		height: 5em;
+		margin: 0 auto 1.8em auto;
+	}
+}
+
+@-moz-document url-prefix() {
+	.m-editor .c-customform-field,
+	.m-editor .c-customform-btns {
+	    font-size: 7.8px;
+		height: 5em;
+		margin: 0 auto 1.8em auto;
+	}
+}
+
+.m-editor .c-customform-field-controlls {
+	height: 24px !important;
+	margin-top: -10px !important;
+}
+
+.m-editor .c-customform-field-controlls .radio.first {
+    margin-left: 2em;
+}
+
+.c-customform-textbox.textarea {
+	padding: .7rem 0 0 0;
+	padding-left: 0.5rem;
+	font-size: 1.5em;
+}

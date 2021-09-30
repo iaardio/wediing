@@ -1,0 +1,70 @@
+.c-singleimage {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+}
+
+.c-singleimage img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.c-singleimage.preview-container{
+    overflow: hidden !important;
+}
+
+.page .c-singleimage img{
+	transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+	-moz-transform: scale(1) !important;	
+}.c-singletext {
+    text-align: center;
+}
+
+.c-singletext .c-singletext-tips-tpl,
+.c-single-text .c-singletext-tips-tpl{
+    display: none;
+}
+
+.c-singletext .text-wrap,
+.c-single-text .text-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: SimHei;
+    position: relative;
+    -webkit-user-select: none;    
+}
+
+.c-singletext .text-wrap img,
+.c-single-text .text-wrap img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.c-singletext .text-content,
+.c-single-text .text-content {
+    width: 100%;
+    height: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.c-single-text .text-content[font-face='MFShangHei_Noncommercial-ExLight'] {
+    font-family: MFShangHei !important;
+}
+
+.c-singletext .text-cover,
+.c-single-text .text-cover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}

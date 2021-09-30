@@ -1,0 +1,1 @@
+window.applicationCache&&(window.applicationCache.addEventListener("updateready",function(a){window.applicationCache.status==window.applicationCache.UPDATEREADY&&(applicationCache.swapCache(),window.location.reload())},!1),window.applicationCache.addEventListener("error",function(a){return!1},!1));
