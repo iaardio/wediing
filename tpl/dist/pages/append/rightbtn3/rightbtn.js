@@ -1,10 +1,10 @@
 define("pages/append/rightbtn3/rightbtn", ["pages/append/rightbtn3/rightbtn.css", "lib/utils/comUtils"], function (require) {
     require("pages/append/rightbtn3/rightbtn.css");
-    var html = '<div id="mymap"class="mymap"style="position: fixed; width: 100%; height: 100%; z-index: 9999; display: none; background-color: white; top: 0; left: 0;"><div class="mapdiv"style="background-color: silver; z-index: 1;"></div><div class="closeMap"></div><a href=""target="parent"><img src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/rightbtn3/img/toplace.png"style="z-index: 1;"class="gotobaidu"/></a><div id="allmap"style="width: 100%; height: 100%;"></div></div><div id="myvideo"class="myvideo"><div class="closeVideo"></div><div class="play-video"><div class="play-box"></div></div></div><img style="z-index: 9399; display: none;"id="musicButton"src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/rightbtn3/img/music1.png"/><table class="dianzhan"border="0"cellspacing="0"style="position: absolute; width: 40px; height: 80px; left: -2px; font-size: 10px;"><tbody><tr><td id="dianzhan"valign="bottom"style="font-size: 10px;"></td></tr><tr><td height="2px"style="font-size: 10px;"></td></tr><tr><td id="asks"valign="bottom"style="font-size: 10px;"></td></tr></tbody></table>'
+    var html = '<div id="mymap"class="mymap"style="position: fixed; width: 100%; height: 100%; z-index: 9999; display: none; background-color: white; top: 0; left: 0;"><div class="mapdiv"style="background-color: silver; z-index: 1;"></div><div class="closeMap"></div><a href=""target="parent"><img src="/tpl/pages/append/rightbtn3/img/toplace.png"style="z-index: 1;"class="gotobaidu"/></a><div id="allmap"style="width: 100%; height: 100%;"></div></div><div id="myvideo"class="myvideo"><div class="closeVideo"></div><div class="play-video"><div class="play-box"></div></div></div><img style="z-index: 9399; display: none;"id="musicButton"src="/tpl/pages/append/rightbtn3/img/music1.png"/><table class="dianzhan"border="0"cellspacing="0"style="position: absolute; width: 40px; height: 80px; left: -2px; font-size: 10px;"><tbody><tr><td id="dianzhan"valign="bottom"style="font-size: 10px;"></td></tr><tr><td height="2px"style="font-size: 10px;"></td></tr><tr><td id="asks"valign="bottom"style="font-size: 10px;"></td></tr></tbody></table>'
         , comUtils = require("lib/utils/comUtils")
         , SCREEN_WIDTH = 640
         , MAX_LINE_NUM = 7
-        , defaultPng = "https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/comment/img/default.png";
+        , defaultPng = "/tpl/pages/append/comment/img/default.png";
     $("body").append(html);
     var click = (comUtils.isMobile(),
         "click")
@@ -141,7 +141,7 @@ define("pages/append/rightbtn3/rightbtn", ["pages/append/rightbtn3/rightbtn.css"
                 t.addParise();
                 var e = "为我们点赞的人";
                 i.desc ? e = i.desc : "1001" == liveApp.caseData.schemecode && (e = "见证我们牵手的人");
-                var n = "https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/rightbtn/img/mydianpic.png";
+                var n = "/tpl/pages/append/rightbtn/img/mydianpic.png";
                 i.background && (n = i.background);
                 var a = '<div id="mydianzhanB"><span class="mydianzhanClose" style="-webkit-border-radius:80px;border:none;color:#333333;font-size:12px;z-index:2;background-color:#ffffff;line-height:68px;text-align: center;" type="button">关闭</span> <img class="mydianzhanimg" src=\'' + n + "'><div class='mydianzhanfont' align='center' style='font-size:16px;color:black;'>您是第<label style='color:#C50440;'>" + t.praise + "</label>位<br>" + e + "<div></div>"
                     , o = $(a);
@@ -262,7 +262,7 @@ define("pages/append/rightbtn3/rightbtn", ["pages/append/rightbtn3/rightbtn.css"
                 var i = $("#base-style");
                 if (i.length <= 0) {
                     i = $('<style type="text/css" id="base-style"></style>');
-                    var t = "@font-face{font-family:'sysfont';src:url('https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/rightbtn3/img/120.ttf');font-style:normal;font-weight:normal;}.rbtn td{font-family:'sysfont';}";
+                    var t = "@font-face{font-family:'sysfont';src:url('/tpl/pages/append/rightbtn3/img/120.ttf');font-style:normal;font-weight:normal;}.rbtn td{font-family:'sysfont';}";
                     i.append(t),
                         $("body").append(i)
                 }
@@ -308,7 +308,7 @@ define("pages/append/rightbtn3/rightbtn", ["pages/append/rightbtn3/rightbtn.css"
             if (!this.hasShow) {
                 this.hasShow = !0;
                 for (var e = function (i, e) {
-                    var n = $('<img style="z-index:9399;-webkit-animation:menurotate 3s infinite linear;-ms-animation:menurotate 3s infinite linear;" class="' + e + ' rbtn" src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/rightbtn/img/round01.png">');
+                    var n = $('<img style="z-index:9399;-webkit-animation:menurotate 3s infinite linear;-ms-animation:menurotate 3s infinite linear;" class="' + e + ' rbtn" src="/tpl/pages/append/rightbtn/img/round01.png">');
                     $("body").append(n);
                     var a = '<div style="z-index:9399;font-size:12px;text-align:center;color:#666;" class="' + e + 'f rbtn"></div>'
                         , o = $(a);
@@ -373,7 +373,7 @@ define("pages/append/rightbtn3/rightbtn", ["pages/append/rightbtn3/rightbtn.css"
                                 n++)
                 }
                 if (n > 1) {
-                    var h = '<img style="z-index:9399;-webkit-animation:linechange 5s infinite;-ms-animation:linechange 5s infinite;opacity:0.2;" class="memuline" src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/rightbtn/img/line01.png">';
+                    var h = '<img style="z-index:9399;-webkit-animation:linechange 5s infinite;-ms-animation:linechange 5s infinite;opacity:0.2;" class="memuline" src="/tpl/pages/append/rightbtn/img/line01.png">';
                     $(h).appendTo($("body"));
                     var r = domUtil.getBiliZ(50 * (n - 1));
                     $("head").append('<style type="text/css">@-webkit-keyframes linechange{0%{height:0;}50%{height:' + r + "px;}100%{height:0;}} @-ms-keyframes linechange{0%{height:0;}50%{height:" + r + "px;}100%{height:0;}}</style>"),

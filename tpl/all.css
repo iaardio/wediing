@@ -3481,7 +3481,7 @@
 }
 
 .css_sprite01 {
-    background-image: url("https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/css_sprite01.png");
+    background-image: url("/tpl/img/css_sprite01.png");
     background-repeat: no-repeat
 }
 
@@ -3604,7 +3604,7 @@
 .u-globalAudio-0 {
     width: 48px;
     height: 48px;
-    background: rgba(4,4,4,0.32) url("https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/musicIcon2.png") no-repeat
+    background: rgba(4,4,4,0.32) url("/tpl/img/musicIcon2.png") no-repeat
 }
 
 .ga-active {
@@ -3614,7 +3614,7 @@
 }
 
 .ga-active-0 {
-    background: rgba(4,4,4,0.32) url("https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/globalAudio.png")
+    background: rgba(4,4,4,0.32) url("/tpl/img/globalAudio.png")
 }
 
 @-moz-keyframes global_audio_rotate {
@@ -6210,7 +6210,7 @@
 .u-guideTop {
     width: 68px;
     height: 68px;
-    background: url("https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/upArrow.png") no-repeat;
+    background: url("/tpl/img/upArrow.png?11") no-repeat;
     position: absolute;
     left: 50%;
     margin-left: -34px;
@@ -6220,11 +6220,11 @@
 }
 
 .u-guideTop-1 {
-    background: url("https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/slideUp.png") no-repeat
+    background: url("/tpl/img/slideUp.png?v1") no-repeat
 }
 
 .u-guideTop-2 {
-    background: url("https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/slideDown.png") no-repeat;
+    background: url("/tpl/img/slideDown.png?v1") no-repeat;
     -webkit-animation: guideTop2 1.5s infinite
 }
 
@@ -6416,7 +6416,7 @@
   opacity: 1;
   box-shadow: 3px 3px 6px #888888;
   background-color: white;
-  background-image: url(https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/20.png);
+  background-image: url(/tpl/img/20.png);
   background-position: top right;
   background-size: 55%;
   background-repeat: no-repeat;

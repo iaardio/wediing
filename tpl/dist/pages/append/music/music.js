@@ -13,7 +13,7 @@ define("pages/append/music/music", ["lib/utils/comUtils", "lib/utils/comUtils", 
         this.playState = "ready";
         var t = this;
         this._$globalAudio.coffee({
-            steams: ['<img src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl//img/globalAudio.png"/>', '<img src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/globalAudio.png"/>', '<img src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/globalAudio.png"/>', '<img src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/globalAudio.png"/>', '<img src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/globalAudio.png"/>', '<img src="https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/img/globalAudio.png"/>'],
+            steams: ['<img src="/tpl//img/globalAudio.png"/>', '<img src="/tpl/img/globalAudio.png"/>', '<img src="/tpl/img/globalAudio.png"/>', '<img src="/tpl/img/globalAudio.png"/>', '<img src="/tpl/img/globalAudio.png"/>', '<img src="/tpl/img/globalAudio.png"/>'],
             steamHeight: 100,
             steamWidth: 50
         }),
@@ -169,13 +169,13 @@ define("pages/append/music/music", ["lib/utils/comUtils", "lib/utils/comUtils", 
                       , a = {
                         case_id: liveApp.caseData.id
                     };
-                    $.get("https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/music/music" + t + ".css", a, function(i) {
+                    $.get("/tpl/pages/append/music/music" + t + ".css", a, function(i) {
                         var t = i
                           , a = document.createElement("style");
                         a.innerHTML = t,
                         document.querySelector("head").appendChild(a)
                     }),
-                    $.get("https://cdn.jsdelivr.net/gh/iaardio/wediing/tpl/pages/append/music/music" + t + ".html", a, function(t) {
+                    $.get("/tpl/pages/append/music/music" + t + ".html", a, function(t) {
                         var a = t
                           , o = isNaN(parseFloat(window.rlSide)) ? 0 : parseFloat(window.rlSide)
                           , l = ["right: " + (20 + o) + "px; top: 20px;", "right: " + (20 + o) + "px; bottom: 20px;", "left: " + (20 + o) + "px; top: 20px;", "left: " + (20 + o) + "px; bottom: 20px;"]
