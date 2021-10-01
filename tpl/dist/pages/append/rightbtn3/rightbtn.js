@@ -143,7 +143,7 @@ define("pages/append/rightbtn3/rightbtn", ["pages/append/rightbtn3/rightbtn.css"
                 i.desc ? e = i.desc : "1001" == liveApp.caseData.schemecode && (e = "见证我们牵手的人");
                 var n = "/tpl/pages/append/rightbtn/img/mydianpic.png";
                 i.background && (n = i.background);
-                var a = '<div id="mydianzhanB"><span class="mydianzhanClose" style="-webkit-border-radius:80px;border:none;color:#333333;font-size:12px;z-index:2;background-color:#ffffff;line-height:68px;text-align: center;" type="button">关闭</span> <img class="mydianzhanimg" src=\'' + n + "'><div class='mydianzhanfont' align='center' style='font-size:16px;color:black;'>您是第<label style='color:#C50440;'>" + t.praise + "</label>位<br>" + e + "<div></div>"
+                var a = '<div id="mydianzhanB"><span class="mydianzhanClose" style="-webkit-border-radius:80px;border:none;color:#333333;font-size:12px;z-index:2;background-color:#ffffff;line-height:68px;text-align: center;" type="button">关闭</span> <img class="mydianzhanimg" src=\'' + n + "'><div class='mydianzhanfont' align='center' style='font-size:16px;color:black;'>您是第<label style='color:#C50440;'>" + ( t.praise + 1) + "</label>位<br>" + e + "<div></div>"
                     , o = $(a);
                 o.find(".mydianzhanClose").off(click).on(click, function () {
                     o.remove()
@@ -420,6 +420,7 @@ define("pages/append/rightbtn3/rightbtn", ["pages/append/rightbtn3/rightbtn.css"
             }, function (e) {
                 200 == e.ecode && (t.praise = e.data.praise,
                     t.asks = e.data.brows,
+                    t.praised && $("#dianzhan").addClass("hasAdded").html(t.praise),
                     RightBtn._initBindEvent.call(t, i),
                     t.base.showComponent ? RightBtn._initAddBtns.call(t, i) : window.showRightBtn3 = function () {
                         RightBtn._initAddBtns.call(t, i)
