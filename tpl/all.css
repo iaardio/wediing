@@ -6210,7 +6210,7 @@
 .u-guideTop {
     width: 68px;
     height: 68px;
-    background: url("/tpl/img/upArrow.png?11") no-repeat;
+    background: url("/tpl/img/upArrow.png") no-repeat;
     position: absolute;
     left: 50%;
     margin-left: -34px;
